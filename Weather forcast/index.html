@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> Simple Weather </title>
+	<meta name="viewport" contecnt="width=divice-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="sytlesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <div class="main-main">
+                <div class="main-body">
+                    <form>
+                    <div class="search">
+                        <h1>Simple Weather <span class="text-color">App</span></h1>
+                        <lable for="city">Welcome to the simple <span class="text-color">weather</span> app!<br> Please <span class="text-color">enter </span> the desired location.<br></lable>
+                        <input type="text" id="city" placeholder="Enter Here">
+                        <button type="button" id="submit">Show Weather!</button>
+                        <div id="error"></div>
+                    </div>
+                <div class="weather-description">
+                    <div class="loading">Loading...</div>
+                    <div id="weather">
+                        <div class="top-weather">
+                            <h2>Weather in </h2> <h1 id="weathercity">City Name</h1>
+                            <p id="state">Mist</p>
+                        </div>
+                        <ul>
+                            <li>Weather Description <span id="weatherdescription">DEScription</span></li>
+                            <li>Temperature <span id="weathertemperature">Tempeature</span></li>
+                            <li>Pressure <span id="min-temp">Sunrise</span></li>
+                            <li>Humidity <span id="Humidity">HUMIDITY</span></li>
+                            <li>Wind Speed <span id="wind">winndy?</span></li>
+                            <li class="lower-li">Wind Direction <span id="max-temp">Sunset</span></li>
+                        </ul>
+                    </div>
+                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+<html>
